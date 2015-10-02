@@ -12,35 +12,40 @@ div {
 	width: 272px;
 }
 
-#search-form {
-}
-
 #div-search-box {
-	/* copied actual google values. */
+	/* copied values from google. */
 	padding-bottom: 2px;
 	padding-top: 2px;
-	width: 580px;
+	width: 540px;
 	border: 1px solid #d9d9d9;
-	
+
 	/* rough estimates. */
 	margin-top: 20px;
 	margin-bottom: 20px;
+
+	outline: none;
+}
+
+#div-search-box:hover {
+	border: 1px solid #AEAEAE;
 }
 
 #div-search-box #search-text {
-	/* font specs from actual google values. */
+	/* copied values from google. */
 	font-family: arial,sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	font-variant: normal;
 
-	/* height specs from actual google values. */
+	/* copied values from google. */
 	line-height: 26px;
 	height: 26px;
 
-	/* border specs from actual google values. */
-	border: transparent;
+	/* copied values from google. */
+	border: none;
+	outline: none;
+	background: transparent;
 
 	/* rough estimates.*/
 	margin-left: 5px;
@@ -48,12 +53,23 @@ div {
 	margin-right: 5px;
 }
 
+#div-search-box #mic-icon {
+	/* copied values from google. */
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
 #div-search-buttons .button {
-	/* copied actual google values. */
+	/* copied values from google. */
 	height: 36px;
 	line-height: 27px;
-	
-	/* copied actual google values. */
+
+	/* copied values from google. */
 	background-color: #f2f2f2;
 	border: 1px solid #f2f2f2;
 	border-radius: 2px;
@@ -69,7 +85,7 @@ div {
 }
 
 #div-search-buttons .button:hover {
-	/* copied actual google values. */
+	/* copied values from google. */
 	background-color: #f8f8f8;
 	border: 1px solid #c6c6c6;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
