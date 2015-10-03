@@ -1,3 +1,8 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
 	background: #fff;
 	color: #222;
@@ -7,9 +12,23 @@ div {
 	display: block;
 }
 
-#google-logo img {
+.horizontally-centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div-google-logo {
+	width: 100%;
+}
+
+#div-google-logo img {
 	height: 92px;
 	width: 272px;
+}
+
+#div-search-form {
+	width: 100%;
 }
 
 #div-search-box {
@@ -58,6 +77,10 @@ div {
 	cursor: pointer;
 	margin-left: 0px;
 	margin-right: 5px;
+}
+
+#div-search-buttons {
+	width: 305px;
 }
 
 #div-search-buttons .button {
