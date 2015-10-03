@@ -12,7 +12,9 @@
 	<div id="sarch-form">
 		<form>
 			<div id="div-search-box">
-				<input type="text" name="search-text" id="search-text" onfocus="focusParent();" onblur="unfocusParent();">
+				<input type="text" name="search-text" id="search-text"
+					onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
+					onmouseover="drawHighlightDivSearchBox(true);" onmouseout="drawHighlightDivSearchBox(false);">
 				<img src="img/mic-icon.png" id="mic-icon" title="Search by voice"/>
 			</div>
 			<div id="div-search-buttons">
@@ -23,11 +25,26 @@
 	</div>
 	</body>
 	<script>
-		function focusParent() {
-			document.getElementById("div-search-box").style.border = "1px solid #33ADFF";
+		divSearchBox = document.getElementById("div-search-box");
+		divSearchBoxHasFocus = false;
+
+		function drawfocusDivSearchBox(gotFocus) {
+			divSearchBoxHasFocus = gotFocus
+			if (gotFocus) {
+				divSearchBox.style.border = "1px solid #33ADFF";
+			} else {
+				divSearchBox.style.border = "1px solid #d9d9d9";
+			}
 		}
-		function unfocusParent() {
-			document.getElementById("div-search-box").style.border = "1px solid #d9d9d9";
+
+		function drawHighlightDivSearchBox(moveIsOver) {
+			if (!divSearchBoxHasFocus) {
+				if (moveIsOver) {
+					divSearchBox.style.border = "1px solid #AEAEAE";
+				} else {
+					divSearchBox.style.border = "1px solid #d9d9d9";
+				}
+			}
 		}
 	</script>
 </html>

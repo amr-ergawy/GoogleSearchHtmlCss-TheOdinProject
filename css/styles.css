@@ -26,10 +26,6 @@ div {
 	outline: none;
 }
 
-#div-search-box:hover {
-	border: 1px solid #AEAEAE;
-}
-
 #div-search-box #search-text {
 	/* copied values from google. */
 	font-family: arial,sans-serif;
