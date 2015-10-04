@@ -1,0 +1,54 @@
+#div-nav-bar {
+	/* copied from a googled solution. */
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	right: 0;
+}
+
+#div-nav-bar ul {
+	/* copied from a googled solution. */
+	list-style-type: none;
+	padding: 0;
+
+	/* guessed values. */
+	float: right;
+	margin-right: 30px;
+}
+
+#div-nav-bar ul li {
+	/* copied from a googled solution. */
+	display: inline;
+}
+
+#div-nav-bar ul li a {
+	/* copied values from google. */
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	color: #000;
+
+	/* copied values from google. */
+	text-decoration: none;
+	
+	/* copied from a googled solution. */
+	display: inline-block;
+	
+	/* copied values from google. */
+	line-height: 24px;
+	outline: none;
+	vertical-align: middle;
+
+	/* copied values from google. */
+	opacity: .75;
+	
+	/* guessed values. */
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#div-nav-bar ul li a:hover,
+#div-nav-bar ul li a:focus {
+	/* copied values from google. */
+	opacity: .85;
+	text-decoration: underline;
+}

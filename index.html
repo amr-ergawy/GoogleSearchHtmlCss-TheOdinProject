@@ -2,29 +2,46 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
-		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<link type="text/css" rel="stylesheet" href="css/global.css"/>
+		<link type="text/css" rel="stylesheet" href="css/navbar.css"/>
+		<link type="text/css" rel="stylesheet" href="css/middle.css"/>
 		<title>Google</title>
 	</head>
-	<body>
-	<div id="div-google-logo">
-		<img src="img/google-logo-874x288.png" class="horizontally-centered"/>
+	<body onload="focusAndClearSearchText();">
+	<div id="div-nav-bar">
+		<ul>
+			<li><a href="index.html">Gmail</a></li>
+			<li><a href="index.html">Images</a></li>
+		</ul>
 	</div>
-	<div id="div-search-form">
-		<form>
-			<div id="div-search-box" class="horizontally-centered">
-				<input type="text" name="search-text" id="search-text"
-					onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
-					onmouseover="drawHighlightDivSearchBox(true);" onmouseout="drawHighlightDivSearchBox(false);">
-				<img src="img/mic-icon.png" id="mic-icon" title="Search by voice"/>
-			</div>
-			<div id="div-search-buttons" class="horizontally-centered">
-				<input class="button" type="submit" value="Google Search">
-				<input class="button" type="submit" value="I'm Feeling Lucky">
-			</div>
-		</form>
+	<div id="div-middle">
+		<div id="div-google-logo">
+			<img src="img/google-logo-874x288.png" class="horizontally-centered"/>
+		</div>
+		<div id="div-search-form">
+			<form action="index.html">
+				<div id="div-search-box" class="horizontally-centered">
+					<input type="text" name="search-text" id="search-text"
+						onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
+						onmouseover="drawHighlightDivSearchBox(true);" onmouseout="drawHighlightDivSearchBox(false);">
+					<img src="img/mic-icon.png" id="mic-icon" title="Search by voice"/>
+				</div>
+				<div id="div-search-buttons" class="horizontally-centered">
+					<input class="button" type="submit" value="Google Search">
+					<input class="button" type="submit" value="I'm Feeling Lucky">
+				</div>
+			</form>
+		</div>
 	</div>
 	</body>
 	<script>
+		searchText = document.getElementById("search-text");
+
+		function focusAndClearSearchText() {
+			searchText.focus();
+			searchText.value = '';
+		}
+
 		divSearchBox = document.getElementById("div-search-box");
 		divSearchBoxHasFocus = false;
 
