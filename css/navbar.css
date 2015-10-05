@@ -21,7 +21,7 @@
 	display: inline;
 }
 
-#div-nav-bar ul li a {
+.google-app-link {
 	/* copied values from google. */
 	font-family: arial,sans-serif;
 	font-size: 13px;
@@ -46,9 +46,32 @@
 	padding-right: 5px;
 }
 
-#div-nav-bar ul li a:hover,
-#div-nav-bar ul li a:focus {
+.google-app-link:hover,
+.google-app-link:focus {
 	/* copied values from google. */
 	opacity: .85;
 	text-decoration: underline;
+}
+
+#google-apps-options {
+	/* copied values from google. */
+	display: inline-block;
+	opacity: .55;
+	cursor: default;
+	vertical-align: middle;
+	outline: none;
+
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#google-apps-options img {
+	height: 22px;
+	width: 22px;
+}
+
+#google-apps-options:hover,
+#google-apps-options:focus {
+	/* copied values from google. */
+	opacity: .85;
 }

@@ -10,8 +10,12 @@
 	<body onload="focusAndClearSearchText();">
 	<div id="div-nav-bar">
 		<ul>
-			<li><a href="index.html">Gmail</a></li>
-			<li><a href="index.html">Images</a></li>
+			<li><a class="google-app-link" href="">Gmail</a></li>
+			<li><a class="google-app-link" href="">Images</a></li>
+			<li><a id="google-apps-options" title="Google Apps" href="">
+					<img src="img/google-icon-3x3-squares.png"/>
+				</a>
+			</li>
 		</ul>
 	</div>
 	<div id="div-middle">
@@ -19,7 +23,7 @@
 			<img src="img/google-logo-874x288.png" class="horizontally-centered"/>
 		</div>
 		<div id="div-search-form">
-			<form action="index.html">
+			<form>
 				<div id="div-search-box" class="horizontally-centered">
 					<input type="text" name="search-text" id="search-text"
 						onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
