@@ -44,6 +44,7 @@
 	/* guessed values. */
 	padding-left: 5px;
 	padding-right: 5px;
+	font-weight: normal;
 }
 
 .google-app-link:hover,
@@ -74,4 +75,39 @@
 #google-apps-options:focus {
 	/* copied values from google. */
 	opacity: .85;
+}
+
+#sign-in-link {
+	/* copied values from google. */
+	color: #fff;
+
+	/* copied values from google. */
+	cursor: default;
+	text-decoration: none;
+
+	/* copied values from google. */
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+
+	/* copied values from google. */
+	background: #4285f4;
+
+	/* copied values from google. */
+	display: inline-block;
+	line-height: 28px;
+	padding: 0 12px;
+	border-radius: 2px;
+
+	/* copied values from google. */
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+
+#sign-in-link:hover,
+#sign-in-link:focus {
+	/* Simulating CSS3 box shadow.
+	 * Limiting this project to CSS1 and CSS2.
+	 */
+	border-bottom: 1px solid #d3d3d3;
 }
