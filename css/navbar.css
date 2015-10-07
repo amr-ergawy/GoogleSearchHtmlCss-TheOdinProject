@@ -1,11 +1,3 @@
-#div-nav-bar {
-	/* copied from a googled solution. */
-	position: absolute;
-	top: 20px;
-	width: 100%;
-	right: 0;
-}
-
 #div-nav-bar ul {
 	/* copied from a googled solution. */
 	list-style-type: none;

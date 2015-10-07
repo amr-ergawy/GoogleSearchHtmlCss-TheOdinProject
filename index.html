@@ -9,49 +9,51 @@
 		<title>Google</title>
 	</head>
 	<body onload="focusAndClearSearchText();">
-	<div id="div-nav-bar">
-		<ul>
-			<li><a class="google-app-link" href="">Gmail</a></li>
-			<li><a class="google-app-link" href="">Images</a></li>
-			<li><a id="google-apps-options" title="Google Apps" href="">
-					<img src="img/google-icon-3x3-squares.png"/>
-				</a>
-			</li>
-			<li><a id="sign-in-link" href="">Sign in</a></li>
-		</ul>
-	</div>
-	<div id="div-middle">
-		<div id="div-google-logo">
-			<img src="img/google-logo-874x288.png" class="horizontally-centered"/>
+	<div id="div-container">
+		<div id="div-nav-bar">
+			<ul>
+				<li><a class="google-app-link" href="">Gmail</a></li>
+				<li><a class="google-app-link" href="">Images</a></li>
+				<li><a id="google-apps-options" title="Google Apps" href="">
+						<img src="img/google-icon-3x3-squares.png"/>
+					</a>
+				</li>
+				<li><a id="sign-in-link" href="">Sign in</a></li>
+			</ul>
 		</div>
-		<div id="div-search-form">
-			<form>
-				<div id="div-search-box" class="horizontally-centered">
-					<input type="text" name="search-text" id="search-text"
-						onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
-						onmouseover="drawHighlightDivSearchBox(true);" onmouseout="drawHighlightDivSearchBox(false);">
-					<img src="img/mic-icon.png" id="mic-icon" title="Search by voice"/>
-				</div>
-				<div id="div-search-buttons-container">
-					<div id="div-search-buttons">
-						<input class="button" type="submit" value="Google Search">
-						<input class="button" type="submit" value="I'm Feeling Lucky">
+		<div id="div-middle">
+			<div id="div-google-logo">
+				<img src="img/google-logo-874x288.png" class="horizontally-centered"/>
+			</div>
+			<div id="div-search-form">
+				<form>
+					<div id="div-search-box" class="horizontally-centered">
+						<input type="text" name="search-text" id="search-text"
+							onfocus="drawfocusDivSearchBox(true);" onblur="drawfocusDivSearchBox(false);"
+							onmouseover="drawHighlightDivSearchBox(true);" onmouseout="drawHighlightDivSearchBox(false);">
+						<img src="img/mic-icon.png" id="mic-icon" title="Search by voice"/>
 					</div>
-				</div>
-			</form>
+					<div id="div-search-buttons-container">
+						<div id="div-search-buttons">
+							<input class="button" type="submit" value="Google Search">
+							<input class="button" type="submit" value="I'm Feeling Lucky">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-	</div>
-	<div id="footer">
-		<ul id="footer-left-list">
-			<li><a href="">Advertising</a></li>
-			<li><a href="">Business</a></li>
-			<li><a href="">About</a></li>
-		</ul>
-		<ul id="footer-right-list">
-			<li><a href="">Privacy</a></li>
-			<li><a href="">Terms</a></li>
-			<li><a href="">Settings</a></li>
-		</ul>
+		<div id="div-footer">
+			<ul id="footer-left-list">
+				<li><a href="">Advertising</a></li>
+				<li><a href="">Business</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+			<ul id="footer-right-list">
+				<li><a href="">Privacy</a></li>
+				<li><a href="">Terms</a></li>
+				<li><a href="">Settings</a></li>
+			</ul>
+		</div>
 	</div>
 	</body>
 	<script>
